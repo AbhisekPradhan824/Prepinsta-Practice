@@ -18,8 +18,8 @@ public class Friendly_Pair_1 {
 		int sumFactor1=sumOfFactors(number1);
 		int sumFactor2=sumOfFactors(number2);
 		
-		double number1Ratio = number1/sumFactor1;
-		double number2Ratio = number2/sumFactor2;
+		double number1Ratio =sumFactor1/number1;
+		double number2Ratio = sumFactor2/number2;
 		
 		if(number1Ratio==number2Ratio) {
 			System.out.println("Yes!, The Number "+ number1 + " & "+ number2 + " are the Friendly Pair");
