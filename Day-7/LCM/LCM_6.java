@@ -13,17 +13,16 @@ public class LCM_6 {
 		System.out.println("Enter the Second Number");
 		int n2=scn.nextInt();
 		
-		int min=Math.min(n1, n2);
-		int max=Math.max(n1, n2);
 		
-		int lcm=n1*n2 / getGcf(min, max);
+		
+		int lcm=n1*n2 / getGcf(n1, n2);
 		System.out.println("LCM: "+lcm);
 		scn.close();
 
 	}
 static int getGcf(int n1, int n2) {
 		
-		return n2==0 ? n1: getGcf(n2, n2%n1);
+		return n2==0 ? n1: getGcf(n2, n1%n2);
 		
 		
 	}
