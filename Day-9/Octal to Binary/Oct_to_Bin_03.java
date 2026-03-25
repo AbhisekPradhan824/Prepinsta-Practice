@@ -25,7 +25,7 @@ public class Oct_to_Bin_03 {
 		
 		while(n!=0) {
 			int temp =(int) n%10;
-			if(temp!=0) {
+			if(n!=0) {
 				res=b.get(temp)+res;
 			}
 			n/=10;
